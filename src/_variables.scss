@@ -1,0 +1,26 @@
+// LOAD FONTS
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,900,100');
+
+$background-img: '../images/bg.gif';
+$social-media-img: '../images/social-media.png';
+$figure-img: '../images/logo.png';
+$white: #FFF;
+$link-color: #E65C43;
+$link-hover-color: #FFF;
+
+$headline-color: #F25C43;
+
+$h1-color: #E65C43;
+$h2-color: white;
+$h3-color: #666;
+
+$color-headings: (
+    h1: $h1-color,
+    h2: $h2-color,
+    h3: $h3-color
+);
+
+$greaybar-bg0color: #F5F6F6;
+$footer-bg-color: #30353D;
+
+$body-font-family: 'Roboto', sans-serif;

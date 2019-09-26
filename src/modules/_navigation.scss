@@ -1,0 +1,63 @@
+figure{
+    width:400px;
+    height:190px;
+    background:url('../images/logo.png') no-repeat 0 50px;
+    float:left;
+    display:block;
+    margin:0;
+    @include size(459){
+        background-size:contain;
+        height:100px;
+    }
+    @include size(959){
+        width:inherit;
+        height:140px;
+        float:none;
+        background-position:center;
+    }
+}
+
+nav {
+    width:540px;
+    height:190px;
+    float:left;
+    text-align:right;
+    @include size(459){
+        margin-bottom:40px !important;
+    }
+    @include size(959){
+        width:inherit;
+        height:50px;
+        float:none;
+        text-align:center;
+    }
+    ul {
+        list-style-type:none;
+        margin-top:95px;
+        @include size(959){
+            margin-top:0;
+        }
+    }
+    ul li {
+        display:inline;
+        font-size:0.8em;
+        margin-right:10px;
+        @include size(767){
+            font-size:0.8em;
+            margin:0 5px;
+        }
+        @include size(959){
+            font-size:1em;
+            margin:0 10px;
+        }
+    }
+    ul li a {
+        color:#E65C43;
+        text-decoration:none;
+        letter-spacing:-0.01em;
+
+        &:hover {
+            color:#FFF;
+        }
+    }
+}

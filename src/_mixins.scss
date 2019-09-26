@@ -1,0 +1,17 @@
+@mixin backImage($image, $height: 500px) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $height;
+}
+
+
+@mixin size($size) {
+    @if $size == 459 {
+      @media (max-width: 459px) { @content; }
+    } @else if $size == 767 {
+      @media (max-width: 767px) { @content; }
+    } @else if $size == 959p {
+      @media (max-width: 959px) { @content; }
+    } 
+  }
